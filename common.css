@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  scroll-behavior: smooth;
+  /* font-family: "Courier"; */
+}
+.header {
+  font-family: "Poppins";
+}
+.body {
+  font-family: "Poppins";
+}
+p,
+a,
+li {
+  line-height: 24px;
+  font-weight: 600;
+}
+p {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: justify;
+}
+
+:root {
+  --header: 48px;
+  --active: #5c18ca;
+  --color_active: rgba(98, 102, 218, 0.7);
+  --background: #ccc;
+}
+
+.active {
+  color: var(--color_active) !important;
+}
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.m-0 {
+  margin: 0 !important;
+}
+
+@keyframes slide {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.p-100 {
+  margin: 100px 0;
+}
+
+.plr-100 {
+  padding: 0 100px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+@keyframes scaleImg {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+@keyframes showDetailsleft {
+  from {
+    opacity: 0;
+    transform: translateX(400px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes showDetailsright {
+  from {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* btn trang web  */
+.button__common {
+  background-color: rgba(17, 21, 245, 0.7);
+  border: none;
+  color: #fff;
+  padding: 6px 18px;
+  position: relative;
+  cursor: pointer;
+}
+.button__common span {
+  content: " ";
+  position: absolute;
+  background-color: #0707bb;
+  transition: all 0.3s linear;
+}
+.button__common span:nth-child(2) {
+  top: 0px;
+  left: 0px;
+  width: 0;
+  height: 2px;
+}
+.button__common span:nth-child(3) {
+  top: 0px;
+  left: 0px;
+  width: 2px;
+  height: 0;
+}
+.button__common span:nth-child(4) {
+  bottom: 0px;
+  right: 0px;
+  width: 0;
+  height: 2px;
+}
+.button__common span:nth-child(5) {
+  bottom: 0px;
+  right: 0px;
+  width: 2px;
+  height: 0;
+}
+.button__common:hover span:nth-child(even) {
+  width: 100%;
+}
+.button__common:hover span:nth-child(odd) {
+  height: 100%;
+}
+
+.btn__footer {
+  padding: 0;
+  padding: 2px 12px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+}
