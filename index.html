@@ -14,12 +14,7 @@
     <link rel="stylesheet" href="./responsive.css" />
   </head>
   <body>
-    <div class="preloading">
-      <div class="loader">
-        <img src="./img/load.gif" alt="" />
-      </div>
-    </div>
-    <div id="app" class="app" style="height: 0">
+    <div id="app" class="app">
       <div class="header">
         <div class="header__name">
           <i class="bx bxs-color"></i>
@@ -45,8 +40,14 @@
           <i class="bx bx-menu"></i>
         </div>
       </div>
-      <div class="content">
+      <div class="content" id="root">
         <div id="home" class="body container">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
           <div class="body__content">
             <div class="body__content__des">
               <h5>I'm Huu Tai.</h5>
@@ -56,19 +57,9 @@
                 <p>I'm website developer.</p>
               </div>
             </div>
-            <div class="body__content__btn">
-              <button class="m-0 button__common btn__contact__body">
-                <a href="#contact">Contact Me</a>
-                <span></span><span></span><span></span><span></span>
-              </button>
-            </div>
-          </div>
-
-          <div class="body__img">
-            <img src="./img/iconperson.png" alt="" />
           </div>
         </div>
-        <div id="about" class="about__me p-100 container">
+        <div id="about" class="about__me container">
           <div class="about__me__img">
             <img src="./img/aboutme.png" alt="" />
           </div>
@@ -85,7 +76,7 @@
             </p>
           </div>
         </div>
-        <div class="services p-100 container">
+        <div class="services container">
           <div class="servvies__tiltle">
             <h1>My Offered Services</h1>
             <p>
@@ -172,67 +163,26 @@
             <h1>Our Latest Featured Projects</h1>
             <p>Who are in extremely love with eco friendly system.</p>
           </div>
-          <div class="project__navbar">
-            <ul>
-              <li class="btn-choose active all">All</li>
-              <li class="btn-choose website">Website</li>
-              <li class="btn-choose ux_ui">UX/UI</li>
-            </ul>
-          </div>
-          <div class="project__list__navigation">
-            <i class="bx bx-left-arrow-alt icon__prev__slide"></i>
-            <i class="bx bx-right-arrow-alt icon__next__slide"></i>
-          </div>
-          <div class="wrap__project__list">
-            <div class="project__list">
-              <div class="project__list__item all ux_ui">
-                <div class="project__list__sub__item">
-                  <img src="./img/upadting.png" alt="item" />
-                  <h4>Updating</h4>
-                  <span></span>
+          <div class="project__list">
+            <div class="project__sub">
+              <h1>Web shop ban hang</h1>
+              <div class="describe">
+                <div class="wrap__img">
+                  <img src="/img/webshop1.png" alt="webshop" />
                 </div>
-              </div>
-              <div class="project__list__item all ux_ui">
-                <div class="project__list__sub__item">
-                  <img src="./img/upadting.png" alt="item" />
-                  <h4>Updating</h4>
-                  <span></span>
-                </div>
-              </div>
-
-              <div class="project__list__item all website">
-                <div class="project__list__sub__item">
-                  <img src="./img/nodejs.png" alt="item" />
-                  <h4>NodeJS</h4>
-                  <span></span>
-                </div>
-              </div>
-              <div class="project__list__item all ux_ui">
-                <div class="project__list__sub__item">
-                  <img src="./img/upadting.png" alt="item" />
-                  <h4>Updating</h4>
-                  <span></span>
-                </div>
-              </div>
-              <div class="project__list__item all ux_ui">
-                <div class="project__list__sub__item">
-                  <img src="./img/upadting.png" alt="item" />
-                  <h4>Updating</h4>
-                  <span></span>
-                </div>
-              </div>
-              <div class="project__list__item all ux_ui">
-                <div class="project__list__sub__item">
-                  <img src="./img/upadting.png" alt="item" />
-                  <h4>Updating</h4>
-                  <span></span>
-                </div>
-              </div>
-              <div class="project__list__item all website">
-                <div class="project__list__sub__item">
-                  <img src="./img/htmlcss.png" alt="item" />
-                  <h4>Html-css</h4>
-                  <span></span>
+                <div class="detail__project">
+                  <h1>Describe</h1>
+                  <div class="content__describe">
+                    <h1>App thiết kế để sever rendering.</h1>
+                    <div class="sub__describe">
+                      <span>Flatform : </span>
+                      <span>Node js</span>
+                    </div>
+                    <div class="sub__describe">
+                      <span>Main library : </span>
+                      <span>Express js</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

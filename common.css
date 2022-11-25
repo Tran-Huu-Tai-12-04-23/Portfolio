@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-
+html {
+  transition: all 0.5s ease-in-out;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
+:root {
+  --color__primary: rgb(240, 135, 76);
+}
 html,
 body,
 div,
@@ -154,8 +158,9 @@ p {
 :root {
   --header: 48px;
   --active: #5c18ca;
-  --color_active: rgba(98, 102, 218, 0.7);
-  --background: #ccc;
+  --color_active: var(--color__primary);
+  --background: rgba(0, 0, 0, 0.5);
+  --background__primary: #262626;
 }
 
 .active {
@@ -209,7 +214,7 @@ p {
   display: block !important;
 }
 .hidden {
-  display: none;
+  display: none !important;
 }
 a {
   text-decoration: none;
@@ -287,4 +292,13 @@ a {
   padding: 0;
   padding: 2px 12px;
   background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40%/70% 30%;
+  }
+  to {
+    border-radius: 40% 60%;
+  }
 }
